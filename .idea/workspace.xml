@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f23f112-fa89-4928-9108-3bcb505ebbf9" name="Changes" comment="EmailGenerator" />
+    <list default="true" id="1f23f112-fa89-4928-9108-3bcb505ebbf9" name="Changes" comment="Loop edit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,11 +60,28 @@
       <option name="project" value="LOCAL" />
       <updated>1689873576290</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="EmailGenerator">
+      <option name="closed" value="true" />
+      <created>1689873773930</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689873773930</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Loop edit">
+      <option name="closed" value="true" />
+      <created>1689875465335</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689875465335</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="EmailGenerator" />
-    <option name="LAST_COMMIT_MESSAGE" value="EmailGenerator" />
+    <MESSAGE value="Loop edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Loop edit" />
   </component>
 </project>
