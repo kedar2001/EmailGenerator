@@ -9,6 +9,7 @@ public class EmailGenerator {
 
     }
     static void check(){
+
         Scanner sc = new Scanner(System.in);
         ArrayList<Email> arr = new ArrayList<>();
         ArrayList<String> firstname = new ArrayList<>();
