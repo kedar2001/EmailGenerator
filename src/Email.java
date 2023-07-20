@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Email {
@@ -5,10 +6,12 @@ public class Email {
     private String lastName;
     private String password;
     private String department;
-    private int mailBoxCapacity;
     private String email;
     private int passwordCapacity = 8;
+    private int mailBoxCapacity;
     private String alternateEmail;
+    static ArrayList<String> arrEmailId = new ArrayList<>();
+    static ArrayList<String> arrPassword = new ArrayList<>();
 
     public Email(String firstName, String lastName){
         this.firstName = firstName;
@@ -16,7 +19,7 @@ public class Email {
         System.out.println("Welcome"+", "+ this.firstName +" "+ this.lastName + "\nchoose your Department\n");
 
         this.department=setDepartment();
-        System.out.println("\n\nAwesome, You belongs to "+department+" Department");
+        System.out.println("\nAwesome, You belongs to "+department+" Department\n");
 
         this.password = setPassword(passwordCapacity);
 
@@ -25,24 +28,31 @@ public class Email {
                     "@"+this.department.toLowerCase().trim()+
                     "."+EmailGenerator.cmpName+
                     ".com";
-        System.out.println("Your Email is: "+this.email);
-        System.out.println("Your password is: "+ this.password);
+        arrEmailId.add(this.email);
+        arrPassword.add(this.password);
+        //System.out.println("Your Email is: "+this.email);
+        //System.out.println("Your password is: "+ this.password);
     }
 
     private static String setDepartment(){
         System.out.print("Here are the department code: \n1)Sales \n2)Developer \n3)Accountant " +
                 "\nENTER CODE HERE: ");
         Scanner sc = new Scanner(System.in);
-        int codeInput = sc.nextInt();
-        String s=null;
-        if(codeInput == 1){
-            return "Sales";
-        } else if (codeInput ==2) {
-            return "Developer";
-        } else if (codeInput==3) {
-            return "Accountant";
-        }else {
-            System.out.println("No match found Retry \n \n");
+        if(sc.hasNextInt()) {
+            int codeInput = sc.nextInt();
+            String s = null;
+            if (codeInput == 1) {
+                return "Sales";
+            } else if (codeInput == 2) {
+                return "Developer";
+            } else if (codeInput == 3) {
+                return "Accountant";
+            } else {
+                System.out.println("No match found Retry \n \n");
+                return setDepartment();
+            }
+        }
+        else {
             return setDepartment();
         }
     }
